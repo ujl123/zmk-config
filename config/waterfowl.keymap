@@ -14,7 +14,7 @@
         compatible = "zmk,combos";
 
         combo_GRAVE {
-            bindings = <&kp GRAVE>;
+            bindings = <&ht LS(GRAVE) GRAVE>;
             key-positions = <1 2>;
         };
 
@@ -35,7 +35,7 @@
 
         combo_DELETE {
             bindings = <&kp DELETE>;
-            key-positions = <14 13 37>;
+            key-positions = <37 16 15>;
         };
 
         combo_ENTER {
@@ -44,13 +44,13 @@
         };
 
         combo_MINUS {
-            bindings = <&kp MINUS>;
+            bindings = <&ht LS(UNDERSCORE) MINUS>;
             key-positions = <16 17 18>;
         };
 
         combo_PLUS {
-            bindings = <&kp PLUS>;
-            key-positions = <14 13>;
+            bindings = <&ht LS(EQUAL) EQUAL>;
+            key-positions = <16 18>;
         };
 
         combo_LEFT_PARENTHESIS {
@@ -69,12 +69,12 @@
         };
 
         combo_BACKSLASH {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&ht LS(BSLH) BACKSLASH>;
             key-positions = <5 16>;
         };
 
         combo_SINGLE_QUOTE {
-            bindings = <&kp SINGLE_QUOTE>;
+            bindings = <&ht LS(SINGLE_QUOTE) SQT>;
             key-positions = <7 8>;
         };
 
