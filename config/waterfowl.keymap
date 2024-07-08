@@ -17,77 +17,7 @@ combos
 		bindings = <&kp GRAVE>;
 		key - positions = <14 13>;
 	};
-	combo_tab
-	{
-		bindings = <&kp TAB>;
-		key - positions = <0 1>;
-	};
-	combo_esc
-	{
-		bindings = <&kp ESC>;
-		key - positions = <2 3>;
-	};
-	combo_
-	{
-		bindings = <&kp GRAVE>;
-		key - positions = <14 13>;
-	};
-	combo_backspace
-	{
-		bindings = <&kp BACKSPACE>;
-		key - positions = <15 16>;
-	};
-	combo_delete
-	{
-		bindings = <&kp DELETE>;
-		key - positions = <14 13 37>;
-	};
-	combo_enter
-	{
-		bindings = <&kp ENTER>;
-		key - positions = <15 16>;
-	};
-	combo_dash
-	{
-		bindings = <&kp MINUS>;
-		key - positions = <16 17 18>;
-	};
-
-	combo_plus
-	{
-		bindings = <&kp PLUS>;
-		key - positions = <14 13>;
-	};
-	combo_left_parenthesis
-	{
-		bindings = <&kp LEFT_PARENTHESIS>;
-		key - positions = <7 16>;
-	};
-	combo_LEFT_BRACE
-	{
-		bindings = <&kp LEFT_BRACE>;
-		key - positions = <8 16>;
-	};
-	combo_LEFT_BRACKET
-	{
-		bindings = <&kp LEFT_BRACKET>;
-		key - positions = <16 27>;
-	};
-	combo_BACKSLASH
-	{
-		bindings = <&kp BACKSLASH>;
-		key - positions = <5 16>;
-	};
-	combo_SINGLE_QUOTE
-	{
-		bindings = <&kp SINGLE_QUOTE>;
-		key - positions = <7 8>;
-	};
-	combo_caps_word
-	{
-		bindings = <&caps_word>;
-		key - positions = <13 16>;
-	};
+	
 };
 
 behaviors
