@@ -142,7 +142,7 @@
 &kp Q             &kp W            &kp E         &kp R              &kp T               &kp Y        &kp U              &kp I           &kp O              &kp P
 &kp A             &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LEFT_SHIFT F  &kp G               &kp H        &hrm LEFT_SHIFT J  &hrm LCTRL K    &hrm LEFT_ALT L    &hrm LEFT_WIN SEMICOLON
 &kp Z             &kp X            &kp C         &kp V              &kp B               &kp N        &kp M              &kp COMMA       &kp DOT            &kp FSLH
-&kp C_PLAY_PAUSE  &lt 3 DEL        &lt 1 SPACE   &kp TAB            &kp C_PLAY_PAUSE    &kp LG(TAB)  &kp ESC            &thumb 2 SPACE  &kp K_APPLICATION  &kp LG(TAB)
+&kp C_PLAY_PAUSE  &lt 3 DEL        &lt 1 SPACE   &kp TAB            &kp C_PLAY_PAUSE    &kp LG(TAB)  &kp LEFT_WIN            &thumb 2 SPACE  &kp K_APPLICATION  &kp LG(TAB)
             >;
 
             sensor-bindings =
@@ -198,6 +198,9 @@
 &bt BT_SEL 2    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp F1     &kp F2     &kp F3     &kp F4
 &bt BT_CLR_ALL  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
             >;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
         };
 
         alt_layer {
@@ -221,6 +224,9 @@
 &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
 &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
             >;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
         };
     };
 };
