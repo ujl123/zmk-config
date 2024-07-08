@@ -83,6 +83,30 @@
     };
 
     behaviors {
+        
+        hold_tap_left_parenthesis {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LEFT_PARENTHESIS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+        };
+
+        hold_tap_left_brace {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LEFT_BRACE";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+        };
+
+        hold_tap_left_bracket {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LEFT_BRACKET";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+        };
         hrm: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
