@@ -28,13 +28,18 @@
             bindings = <&kp GRAVE>;
             key-positions = <14 13>;
         };
+
+        combo_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-		/* QWERTY
+            /* QWERTY
 		 *
 		 * ,----------------------------------.                      ,----------------------------------.
 		 * |   0  |   1  |   2  |   3  |   4  |                      |   5  |   6  |   7  |   8  |   9  |
