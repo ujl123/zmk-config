@@ -143,7 +143,9 @@
 &kp C_PLAY_PAUSE  &lt 3 DEL        &lt 1 SPACE   &kp TAB            &kp N2    &kp N3  &kp ESC            &thumb 2 SPACE  &kp K_APPLICATION  &kp N4
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
         };
 
         navnum_layer {
