@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
+/ {
 combos
 {
 	compatible = "zmk,combos";
@@ -187,4 +187,5 @@ keymap
 
 		sensor - bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN & inc_dec_kp TAB LS(TAB)>;
 	};
+};
 };
