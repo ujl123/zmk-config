@@ -118,6 +118,8 @@
 &kp Z             &kp X            &kp C         &kp V              &kp B     &kp N   &kp M              &kp COMMA     &kp DOT          &kp FSLH
 &kp C_PLAY_PAUSE  &lt 3 DEL        &lt 1 SPACE   &kp TAB            &kp N2    &kp N3  &kp ESC            &kp BSPC      &lt 2 RET        &kp N4
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         navnum_layer {
