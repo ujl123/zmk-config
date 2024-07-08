@@ -20,7 +20,7 @@ hrm: require_prior_idle {
     bindings = <&kp>, <&kp>;
 };
         };
-    };
+
 	keymap {
 		compatible = "zmk,keymap";
 
