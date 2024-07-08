@@ -23,23 +23,15 @@
 
 combos {
   compatible = "zmk,combos";
+        combo_GRAVE {
+            bindings = <&kp GRAVE>;
+            key-positions = <14 13>;
+        };
 
-  combo_GRAVE {
-    bindings = < & kp GRAVE > ;
-    key-positions = < 1 2 > ;
-  };
-  combo_TAB {
-    bindings = < & kp TAB > ;
-    key-positions = < 0 1 > ;
-  };
-  combo_ESC {
-    bindings = < & kp ESC > ;
-    key-positions = < 13 14 > ;
-  };
-  combo_BACKSPACE {
-    bindings = < & kp BACKSPACE > ;
-    key-positions = < 15 16 > ;
-  };
+        combo_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+        };
 };
 
     keymap {
