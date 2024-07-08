@@ -71,7 +71,7 @@
         };
 
         combo_BACKSLASH {
-            bindings = <&ht BACKSLASH BSLH>;
+            bindings = <&ht LS(BACKSLASH) BACKSLASH>;
             key-positions = <5 16>;
         };
 
