@@ -21,8 +21,9 @@
         };
     };
 
-combos {
-  compatible = "zmk,combos";
+    combos {
+        compatible = "zmk,combos";
+
         combo_GRAVE {
             bindings = <&kp GRAVE>;
             key-positions = <14 13>;
@@ -32,7 +33,7 @@ combos {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
         };
-};
+    };
 
     keymap {
         compatible = "zmk,keymap";
