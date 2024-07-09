@@ -87,7 +87,12 @@
 
         combo_app {
             bindings = <&kp C_MENU>;
-            key-positions = <27 28>;
+            key-positions = <37 38>;
+        };
+
+        combo_hard_delete {
+            bindings = <&kp LC(LS(DEL))>;
+            key-positions = <36 37 33>;
         };
     };
 
