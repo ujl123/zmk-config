@@ -158,10 +158,10 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
+                <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         navnum_layer {
@@ -187,10 +187,10 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
+                <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         function_layer {
@@ -216,10 +216,10 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
+                <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         system_layer {
@@ -245,10 +245,10 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
+                <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 
