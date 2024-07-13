@@ -16,6 +16,7 @@
         combo_GRAVE {
             bindings = <&ht LS(GRAVE) GRAVE>;
             key-positions = <1 2>;
+            timeout-ms = <25>;
         };
 
         combo_TAB {
@@ -78,6 +79,7 @@
         combo_SINGLE_QUOTE {
             bindings = <&ht LS(SINGLE_QUOTE) SQT>;
             key-positions = <7 8>;
+            timeout-ms = <25>;
         };
 
         combo_caps_word {
@@ -86,7 +88,7 @@
         };
 
         combo_app {
-            bindings = <&kp C_MENU>;
+            bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <37 38>;
         };
 
@@ -109,9 +111,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            require-prior-idle-ms = <140>;
             bindings = <&kp>, <&kp>;
         };
 
