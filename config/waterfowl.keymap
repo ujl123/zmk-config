@@ -209,10 +209,10 @@
 		 */
 
             bindings = <
-&bt BT_SEL 0    &mkp MB1   &kp GRAVE  &mkp MB2   &kp GRAVE    &kp GRAVE  &kp F9  &kp F10  &kp F11  &kp F12
-&bt BT_SEL 1    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp F5  &kp F6   &kp F7   &kp F8
-&bt BT_SEL 2    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4
-&bt BT_CLR_ALL  &trans     &trans     &trans     &trans       &trans     &trans  &trans   &trans   &trans
+&trans  &mkp MB1   &kp GRAVE  &mkp MB2   &kp GRAVE    &kp GRAVE  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp F5  &kp F6   &kp F7   &kp F8
+&trans  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4
+&trans  &trans     &trans     &trans     &trans       &trans     &trans  &trans   &trans   &trans
             >;
 
             sensor-bindings =
@@ -222,7 +222,7 @@
                 <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
         };
 
-        alt_layer {
+        system_layer {
             /* FUNC
 		 *
 		 * ,----------------------------------.                      ,----------------------------------.
@@ -238,10 +238,10 @@
 		 */
 
             bindings = <
-&kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
-&kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
-&kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
-&kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
+&kp GRAVE     &kp GRAVE     &kp GRAVE     &kp GRAVE     &kp GRAVE     &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
+&kp GRAVE     &kp GRAVE     &kp GRAVE     &kp GRAVE     &kp GRAVE     &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
+&kp GRAVE     &kp GRAVE     &kp GRAVE     &kp GRAVE     &kp GRAVE     &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE  &kp GRAVE
             >;
 
             sensor-bindings =
@@ -249,6 +249,15 @@
                 <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        system {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
