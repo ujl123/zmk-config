@@ -163,7 +163,7 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
                 <&inc_dec_kp C_PREV C_NEXT>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         navnum_layer {
@@ -192,7 +192,7 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
                 <&inc_dec_kp C_PREV C_NEXT>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         function_layer {
@@ -221,7 +221,7 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
                 <&inc_dec_kp C_PREV C_NEXT>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         system_layer {
@@ -248,9 +248,9 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp C_PREV C_NEXT>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
-                <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 
