@@ -165,10 +165,10 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp voldown_prev volup_skip>,
+                <&inc_dec_kp &voldown_prev &volup_skip>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
-                <&inc_dec_kp voldown_prev volup_skip>;
+                <&inc_dec_kp &voldown_prev &volup_skip>;
         };
 
         navnum_layer {
@@ -194,10 +194,10 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp voldown_prev volup_skip>,
+                <&inc_dec_kp &voldown_prev &volup_skip>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
-                <&inc_dec_kp voldown_prev volup_skip>;
+                <&inc_dec_kp &voldown_prev &volup_skip>;
         };
 
         function_layer {
@@ -223,10 +223,10 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp voldown_prev volup_skip>,
+                <&inc_dec_kp &voldown_prev &volup_skip>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
-                <&inc_dec_kp voldown_prev volup_skip>;
+                <&inc_dec_kp &voldown_prev &volup_skip>;
         };
 
         system_layer {
@@ -252,10 +252,10 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp voldown_prev volup_skip>,
+                <&inc_dec_kp &voldown_prev &volup_skip>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
-                <&inc_dec_kp voldown_prev volup_skip>;
+                <&inc_dec_kp &voldown_prev &volup_skip>;
         };
 
     conditional_layers {
