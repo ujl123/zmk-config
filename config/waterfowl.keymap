@@ -120,22 +120,11 @@
             bindings = <&kp>, <&kp>;
         };
 
-        volup_skip: volup_skip {
-            compatible = "zmk,behavior-mod-morph";
-            label = "VOLUP_SKIP";
-            bindings = <&kp C_VOL_UP>, <&kp C_NEXT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        voldown_prev: voldown_prev {
-            compatible = "zmk,behavior-mod-morph";
-            label = "VOLDOWN_PREV";
-            bindings = <&kp C_VOL_DN>, <&kp C_PREV>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+        encoder_1: encoder_1 {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_1";
+            #sensor-binding-cells = <0>;
+            bindings = <&none>, <&none>;
         };
     };
 
@@ -165,7 +154,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&encoder_1>,
                 <&inc_dec_kp C_PREV C_NEXT>,
                 <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
