@@ -124,7 +124,25 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_1";
             #sensor-binding-cells = <0>;
-            bindings = <&none>, <&none>;
+            bindings = <&voldn_prev>, <&volup_skip>;
+        };
+
+        volup_skip: volup_skip {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VOLUP_SKIP";
+            bindings = <&kp C_VOL_UP>, <&kp C_NEXT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        voldn_prev: voldn_prev {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VOLDN_PREV";
+            bindings = <&kp C_VOL_DN>, <&kp C_PREV>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
