@@ -153,10 +153,10 @@
 		 */
 
             bindings = <
-&kp Q             &kp W            &kp E         &kp R              &kp T               &kp Y        &kp U              &kp I           &kp O            &kp P
-&kp A             &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LEFT_SHIFT F  &kp G               &kp H        &hrm LEFT_SHIFT J  &hrm LCTRL K    &hrm LEFT_ALT L  &hrm LEFT_WIN SEMICOLON
-&kp Z             &kp X            &kp C         &kp V              &kp B               &kp N        &kp M              &kp COMMA       &kp DOT          &kp FSLH
-&kp C_PLAY_PAUSE  &sk LCTRL        &lt 1 SPACE   &sk LEFT_SHIFT     &kp C_PLAY_PAUSE    &kp LG(TAB)  &sk LEFT_ALT       &thumb 2 SPACE  &sk LEFT_WIN     &kp LG(TAB)
+&kp Q             &kp W            &kp E         &kp R              &kp T               &kp Y        &kp U              &kp I            &kp O               &kp P
+&kp A             &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LEFT_SHIFT F  &kp G               &kp H        &hrm LEFT_SHIFT J  &hrm LCTRL K     &hrm LEFT_ALT L     &hrm LEFT_WIN SEMICOLON
+&kp Z             &kp X            &kp C         &kp V              &kp B               &kp N        &kp M              &ht COMMA COMMA  &ht LS(DOT) PERIOD  &ht LS(FSLH) SLASH
+&kp C_PLAY_PAUSE  &sk LCTRL        &lt 1 SPACE   &sk LEFT_SHIFT     &kp C_PLAY_PAUSE    &kp LG(TAB)  &sk LEFT_ALT       &lt 2 SPACE      &sk LEFT_WIN        &kp LG(TAB)
             >;
 
             sensor-bindings =
