@@ -112,9 +112,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <125>;
-            require-prior-idle-ms = <140>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -212,7 +212,7 @@
 		 */
 
             bindings = <
-&trans        &mkp MB1      &none      &mkp MB2    &none       &kp GRAVE  &kp F9  &kp F10  &kp F11  &kp F12
+&soft_off     &mkp MB1      &none      &mkp MB2    &none       &kp GRAVE  &kp F9  &kp F10  &kp F11  &kp F12
 &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &mkp MB3    &kp GRAVE  &kp F5  &kp F6   &kp F7   &kp F8
 &trans        &trans        &trans     &trans      &trans      &kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4
 &trans        &trans        &trans     &trans      &trans      &trans     &trans  &trans   &trans   &trans
