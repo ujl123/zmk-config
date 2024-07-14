@@ -119,6 +119,24 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
+
+        volup_skip: volup_skip {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VOLUP_SKIP";
+            bindings = <&kp C_VOL_UP>, <&kp C_NEXT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        voldown_prev: voldown_prev {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VOLDOWN_PREV";
+            bindings = <&kp C_VOL_DN>, <&kp C_PREV>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
